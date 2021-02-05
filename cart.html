@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Personal Concierge Service</title>
+<title>Cart</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -8,13 +8,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif}
-p {margin-left: 20px}
-h2 {margin-left: 20px}
-h3 {margin-left: 20px}
-h4 {margin-left: 20px}
-h5 {margin-left: 20px}
-h6 {margin-left: 20px}
 .mySlides {display: none}
+h3 {
+font-size: 60px;
+}
 </style>
 <body>
 
@@ -31,7 +28,7 @@ h6 {margin-left: 20px}
         <a href="#" class="w3-bar-item w3-button">Personalised</a>
       </div>
     </div>
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
     <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
 	<a href="concierge.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Personal Concierge Service</a>
 
@@ -49,26 +46,8 @@ h6 {margin-left: 20px}
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
-<h2>Personal Concierge Service</h2>
-<div class="mainpagedesc">
-<p>Our personal concierge service will allow you access to a premium service that is tailiored to your buying needs. We will help you find the best rosettes for you event through experts that have been working in the rosette manufacturing industry for over 25 years. Your order will overlooked by one of the managing directors of the comapany before it is dispached.</p>
-</div>
-
-<h3>What We Offer:</h3>
-
-<h4>Your order will be placed on a priority list</h4>
-
-<h4>Pre-print designs will be emailed to you</h4>
-
-<h5>All orders sent will be with tracked delivery</h5>
-
-<h6>Faster response time via email regarding your order</h6>
-
-<h6>A discount on future orders</h6>
-
-<h3>How do i gain access to the personal concierge service?</h3>
-<p>To gain access to the personal concierge service, just tick "BOX TEXT" box at checkout</p>
-  
+<h1>Cart</h1>
+<a href="checkout.html">Checkout</a>
 <!-- End Page Content -->
 </div>
 
@@ -80,6 +59,22 @@ h6 {margin-left: 20px}
 </footer>
 
 <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
