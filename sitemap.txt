@@ -1,4 +1,7 @@
 http://www.dartmoorrosettes.co.uk/
 http://www.dartmoorrosettes.co.uk/index.html
+http://www.dartmoorrosettes.co.uk/home.html
 http://www.dartmoorrosettes.co.uk/concierge.html
 http://www.dartmoorrosettes.co.uk/about.html
+http://www.dartmoorrosettes.co.uk/dog.html
+http://www.dartmoorrosettes.co.uk/contact.html
