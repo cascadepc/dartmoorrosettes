@@ -3,11 +3,20 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<title>Dartmoor Rosettes</title>
+<title>Template Listing - Dartmoor Rosettes</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+h3 {
+font-size: 60px;
+}
+
 /* Basic Styling */
 html, body {
   height: 100%;
@@ -36,8 +45,8 @@ html, body {
 .left-column img {
   width: 100%;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 125px;
+  top: 70px;
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -233,12 +242,40 @@ $(document).ready(function() {
 </head>
 
 <body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">Rosettes <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dog.html" class="w3-bar-item w3-button">Dog Rosettes</a>
+        <a href="#" class="w3-bar-item w3-button">Horse Rosettes</a>
+        <a href="#" class="w3-bar-item w3-button">Personalised Rosettes</a>
+      </div>
+    </div>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+	<a href="concierge.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Personal Concierge Service</a>
+
+    <a href="cart.html" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-shopping-basket"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="mobilerosettes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rosettes</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About us</a>
+  <a href="concierge.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Personal Concierge Service</a>
+</div>
 
 <main class="container">
  
   <!-- Left Column / Image -->
   <div class="left-column">
-    <img data-image="black" src="images/black.png" alt="">
+    <img data-image="black" src="" alt="">
     <img data-image="blue" src="images/blue.png" alt="">
     <img data-image="red" class="active" src="sample_winner_paw_rosettes.webp" style="width:554px;height:490px;" alt="">
   </div>
