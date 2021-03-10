@@ -1,197 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
 <title>Dog Show Rosettes - Dartmoor Rosettes</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
 
 <head>
-<link rel="icon" href="favicon.png">
+	<link rel="icon" href="favicon.png">
 </head>
 
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">Rosettes <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-	    <a href="stock.html" class="w3-bar-item w3-button">Stock Rosettes</a>
-        <a href="dog.html" class="w3-bar-item w3-button">Dog Rosettes</a>
-        <a href="horse.html" class="w3-bar-item w3-button">Horse Rosettes</a>
-        <a href="#" class="w3-bar-item w3-button">Personalised Rosettes</a>
-      </div>
-    </div>
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
-	<a href="ordering.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Ordering With Us</a>
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">Rosettes <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="stock.html" class="w3-bar-item w3-button">Stock Rosettes</a>
+					<a href="dog.html" class="w3-bar-item w3-button">Dog Rosettes</a>
+					<a href="horse.html" class="w3-bar-item w3-button">Horse Rosettes</a>
+					<a href="#" class="w3-bar-item w3-button">Personalised Rosettes</a>
+				</div>
+			</div>
+			<a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+			<a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+			<a href="ordering.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Ordering With Us</a>
 
-    <a href="cart.html" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-shopping-basket"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="mobilerosettes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rosettes</a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
-  <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About us</a>
-  <a href="ordering.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ordering With Us</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- About Text -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
-    <h2 class="w3-wide w3-center">Our Rosettes</h2>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6">
-    </div>
-  </div>
-
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-h3 {font-size: 60px;}
-h2 {font-size: 30px;}
-p {font-size: 17px
-</style>
-<style>
-.right {
-float: right;
-margin-left:auto;
-margin-right:auto;
-}
-
-.center {
-float: center;
-margin-left:auto;
-margin-right:auto;
-}
-
-.left {
-float: left;
-margin-left:auto;
-margin-right:auto;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-</style>
-
-<!-- Product 1 -->
-<div style="width: 300px; float:left; margin:10px">
-		<div class="card">
-		<a href="stock.html">
-		<img src="products\1st_to_6th_3_tier_dog_rosettes.jfif" alt="1st_to_6th_3_tier_dog_rosettes" style="width:100%">
-		<h1>Stock Rosettes</h1>
-		</a>
-		<a href="stock.html">
-		<p><button>VIEW PRODUCTS</button></p>
-		</a>
+			<a href="cart.html" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-shopping-basket"></i></a>
+		</div>
 	</div>
-</div>
 
-<!-- Product 2 -->
-<div style="width: 300px; float:left; margin:10px">
-		<div class="card">
-		<a href="dog.html">
-		<img src="products\3_tier_multi_dog_award_rosettes.webp" alt="3_tier_multi_dog_award_rosettes.webp" style="width:100%">
-		<h1>Dog Show Rosettes</h1>
-		</a>
-		<a href="dog.html">
-		<p><button>VIEW PRODUCTS</button></p>
-		</a>
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="mobilerosettes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rosettes</a>
+		<a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+		<a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About us</a>
+		<a href="ordering.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ordering With Us</a>
 	</div>
-</div>
 
-<!-- Product 3 -->
-<div style="width: 300px; float:left; margin:10px">
-		<div class="card">
-		<a href="horse.html">
-		<img src="products\1st_to_3rd_place_horse_show_rosette.webp" alt="1st_to_3rd_place_horse_show_rosette" style="width:100%">
-		<h1>Horse Rosettes</h1>
-		</a>
-		<a href="horse.html">
-		<p><button>VIEW PRODUCTS</button></p>
-		</a>
-	</div>
-</div>
+	<!-- Page content -->
+	<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-<!-- Product 4 -->
-<div style="width: 300px; float:left; margin:10px">
-		<div class="card">
-		<a href="#">
-		<img src="products\1st_to_6th_3_tier_dog_rosettes.jfif" alt="1st_to_6th_3_tier_dog_rosettes" style="width:100%">
-		<h1>Personalised Rosettes</h1>
-		</a>
-		<a href="#">
-		<p><button>VIEW PRODUCTS</button></p>
-		</a>
-	</div>
-</div>
+		<!-- About Text -->
+		<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
+			<h2 class="w3-wide w3-center">Our Rosettes</h2>
+			<div class="w3-row w3-padding-32">
+				<div class="w3-col m6">
+				</div>
+			</div>
+
+			<style>
+				body {
+					font-family: "Lato", sans-serif
+				}
+
+				.mySlides {
+					display: none
+				}
+
+				h3 {
+					font-size: 60px;
+				}
+
+				h2 {
+					font-size: 30px;
+				}
+
+                p {
+                    font-size: 17px
+                }
+			</style>
+			<style>
+				.right {
+					float: right;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.center {
+					float: center;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.left {
+					float: left;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.card {
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+					max-width: 300px;
+					margin: auto;
+					text-align: center;
+					font-family: arial;
+				}
+
+				.price {
+					color: grey;
+					font-size: 22px;
+				}
+
+				.card button {
+					border: none;
+					outline: 0;
+					padding: 12px;
+					color: white;
+					background-color: #000;
+					text-align: center;
+					cursor: pointer;
+					width: 100%;
+					font-size: 18px;
+				}
+
+					.card button:hover {
+						opacity: 0.7;
+					}
+			</style>
+
+			<!-- Product 1 -->
+			<div style="width: 300px; float:left; margin:10px">
+				<div class="card">
+					<a href="stock.html">
+						<img src="products\1st_to_6th_3_tier_dog_rosettes.jfif" alt="1st_to_6th_3_tier_dog_rosettes" style="width:100%">
+						<h1>Stock Rosettes</h1>
+					</a>
+					<a href="stock.html">
+						<p><button>VIEW PRODUCTS</button></p>
+					</a>
+				</div>
+			</div>
+
+			<!-- Product 2 -->
+			<div style="width: 300px; float:left; margin:10px">
+				<div class="card">
+					<a href="dog.html">
+						<img src="products\3_tier_multi_dog_award_rosettes.webp" alt="3_tier_multi_dog_award_rosettes.webp" style="width:100%">
+						<h1>Dog Show Rosettes</h1>
+					</a>
+					<a href="dog.html">
+						<p><button>VIEW PRODUCTS</button></p>
+					</a>
+				</div>
+			</div>
+
+			<!-- Product 3 -->
+			<div style="width: 300px; float:left; margin:10px">
+				<div class="card">
+					<a href="horse.html">
+						<img src="products\1st_to_3rd_place_horse_show_rosette.webp" alt="1st_to_3rd_place_horse_show_rosette" style="width:100%">
+						<h1>Horse Rosettes</h1>
+					</a>
+					<a href="horse.html">
+						<p><button>VIEW PRODUCTS</button></p>
+					</a>
+				</div>
+			</div>
+
+			<!-- Product 4 -->
+			<div style="width: 300px; float:left; margin:10px">
+				<div class="card">
+					<a href="#">
+						<img src="products\1st_to_6th_3_tier_dog_rosettes.jfif" alt="1st_to_6th_3_tier_dog_rosettes" style="width:100%">
+						<h1>Personalised Rosettes</h1>
+					</a>
+					<a href="#">
+						<p><button>VIEW PRODUCTS</button></p>
+					</a>
+				</div>
+			</div>
 
 
-<!-- End Page Content -->
-</div>
+			<!-- End Page Content -->
+		</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <p>WARNING! - All copyrighted images are trademarks of their respective owners</p>
-</footer>
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+			<i class="fa fa-facebook-official w3-hover-opacity"></i>
+			<i class="fa fa-instagram w3-hover-opacity"></i>
+			<p>WARNING! - All copyrighted images are trademarks of their respective owners</p>
+		</footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+		<script>
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function myFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+			// When the user clicks anywhere outside of the modal, close it
+			var modal = document.getElementById('ticketModal');
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
 
 </body>
 </html>
